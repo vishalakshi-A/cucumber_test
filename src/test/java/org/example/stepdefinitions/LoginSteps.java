@@ -21,12 +21,12 @@ public class LoginSteps {
 
     @When("User enters username as {string} and password on {string}")
     public void userEntersUsernameAsAndPasswordAs(String login, String pageName) {
-        PAGES_STORAGE.put("Home Page", ((LoginPage) PAGES_STORAGE.get(pageName)).login(login, GIT_HUB_PASSWORD));
+        PAGES_STORAGE.put("Home Page", ((LoginPage) PAGES_STORAGE.get(pageName)).login(login, "7GNIgni1985LCRV"));
     }
 
     @When("User enters username as {string} and password as {string} on {string}")
     public void userEntersUsernameAsAndPasswordAsOn(String login, String pass, String pageName) {
-        ((LoginPage) PAGES_STORAGE.get(pageName)).fillIncorrectData(login, pass);
+        ((LoginPage) PAGES_STORAGE.get(pageName)).fillIncorrectData(login, "7GNIgni1985LCRV");
     }
 
     @Then("User gets error message {string} on {string}")
